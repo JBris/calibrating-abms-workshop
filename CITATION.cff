@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+authors:
+  - family-names: "Bristow"
+    given-names: "James"
+    orcid: "https://orcid.org/0009-0002-3381-7466"
+title: "Calibrating Agent-Based Models Workshop"
+version: 1.0.0
+type: software
+date-released: 2026-08-31
+license: MIT
+url: "https://github.com/JBris/calibrating-abms-workshop"
+doi: 10.5281/zenodo.22142543

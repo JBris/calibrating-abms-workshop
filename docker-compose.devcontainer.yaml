@@ -1,0 +1,7 @@
+services:
+  caliagent:
+    image: ghcr.io/JBris/caliagent:${CALIAGENT_VERSION:-latest}
+    command: sleep infinity
+    volumes:
+      - .:/workspace
+    tty: true

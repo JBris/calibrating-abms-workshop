@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "caliagent"
+version = "1.0.0"
+description = "A workshop covering the calibration of agent-based models."
+authors = ["James Bristow <J.Bristow2@massey.ac.nz>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/JBris/calibrating-abms-workshop"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+exclude = [
+    "build/",
+    "dist/",
+    "venv/",
+    "docs/source",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "double"
+indent-style = "tab"
+
+[tool.ruff.lint]
+extend-select = [
+    "UP",
+    "F",
+    "E",
+    "W",
+    "I",
+    "NPY",
+    "RUF"
+]
+
+extend-ignore = [
+    "W191",
+    "E101",
+    "RUF012"
+]
+
+[tool.codespell]
+skip = './docs/build,poetry.lock,docs/**.ipynb'
+count = true
+quiet-level = 3
+ignore-words-list = 'ot,sies,SIES'
+
+[tool.bandit]
+skips = ["B101"]

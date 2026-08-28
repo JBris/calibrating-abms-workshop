@@ -1,0 +1,17 @@
+services:
+  caliagent:
+    image: ghcr.io/JBris/caliagent:${CALIAGENT_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_DATE: date -u +'%Y-%m-%dT%H:%M:%SZ'
+        CALIAGENT_VERSION: ${CALIAGENT_VERSION:-latest}
+      tags:
+        - ghcr.io/JBris/caliagent:latest
+    ports:
+      - 8888:8888
+    volumes:
+      - ./docs/workshop:/workspace/workshop
+    command: >
+      jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
