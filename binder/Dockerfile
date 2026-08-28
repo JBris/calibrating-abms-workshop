@@ -1,4 +1,4 @@
-FROM ghcr.io/JBris/caliagent:1.0.0
+FROM ghcr.io/jbris/caliagent:1.0.0
 
 ARG NB_USER=jovyan
 

@@ -1,6 +1,6 @@
 services:
   caliagent:
-    image: ghcr.io/JBris/caliagent:${CALIAGENT_VERSION:-latest}
+    image: ghcr.io/jbris/caliagent:${CALIAGENT_VERSION:-latest}
     build:
       context: .
       dockerfile: Dockerfile
@@ -8,7 +8,7 @@ services:
         BUILD_DATE: date -u +'%Y-%m-%dT%H:%M:%SZ'
         CALIAGENT_VERSION: ${CALIAGENT_VERSION:-latest}
       tags:
-        - ghcr.io/JBris/caliagent:latest
+        - ghcr.io/jbris/caliagent:latest
     ports:
       - 8888:8888
     volumes:

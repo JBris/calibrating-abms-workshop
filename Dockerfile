@@ -14,6 +14,8 @@ WORKDIR /workspace
 
 COPY README.md README.md
 
+COPY caliagent caliagent
+
 COPY docs/workshop /workspace/workshop
 
 RUN apt-get update \
@@ -33,7 +35,7 @@ ENV POETRY_NO_INTERACTION=1 \
 COPY pyproject.toml poetry.lock ./
 
 RUN curl -sSL https://install.python-poetry.org | python3 -\
-    && poetry install --no-root --with dev,docs \
+    && poetry install --with dev,docs \
     && rm -rf $POETRY_CACHE_DIR \
     && curl -sSL https://install.python-poetry.org | python3 - --uninstall
 
