@@ -93,7 +93,7 @@ extend-ignore = [
 skip = './docs/build,poetry.lock,docs/**.ipynb'
 count = true
 quiet-level = 3
-ignore-words-list = 'ot,sies,SIES'
+ignore-words-list = 'ot,sies,SIES,Te'
 
 [tool.bandit]
 skips = ["B101"]

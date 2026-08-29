@@ -24,6 +24,7 @@
 - [Calibrating Agent-Based Models Workshop](#calibrating-agent-based-models-workshop)
 - [Table of contents](#table-of-contents)
 - [Introduction](#introduction)
+- [Workshop](#workshop)
 - [Usage with Docker](#usage-with-docker)
 - [Usage with Binder](#usage-with-binder)
 - [Coordinators](#coordinators)
@@ -35,6 +36,17 @@
 # Introduction
 
 This repository contains code examples and materials for an introductory session on the calibration of agent-based models (ABMs). The examples are designed to accompany the session and demonstrate, at a high level, what calibration means in the context of ABMs, why calibration is needed, and some of the different approaches that can be used to connect model parameters with observations or other empirical data.
+
+# Workshop
+
+Workshop material for agent-based modelling may be found in the [workshop directory.](docs/source/workshop)
+
+This workshop material includes the following example models:
+
+1. Lotka-Volterra ordinary differential equations
+2. Wolf and Sheep Predation agent-based model
+
+We will work though basic examples for optimisation and sensitivity analysis, alongside more complex calibration methods.
 
 # Usage with Docker
 
@@ -59,7 +71,7 @@ Note that you may need to wait roughly 3 or more minutes for the workshop Docker
 
 # Announcements
 
-To view workshop announcements, [please select this link](https://github.com/JBris/calibrating-abms-workshop/tree/main/docs/source/communications_community/announcements.md).
+To view workshop announcements, [please select this link](https://github.com/JBris/calibrating-abms-workshop/tree/main/docs/source/community/announcements.md).
 
 # Communication
 

@@ -16,7 +16,7 @@ COPY README.md README.md
 
 COPY caliagent caliagent
 
-COPY docs/workshop /workspace/workshop
+COPY docs/source/workshop /workspace/workshop
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends build-essential graphviz \
