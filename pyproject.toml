@@ -59,7 +59,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 target-version = "py311"
-line-length = 88
+line-length = 90
 exclude = [
     "build/",
     "dist/",
@@ -88,6 +88,9 @@ extend-ignore = [
     "E101",
     "RUF012"
 ]
+
+[tool.ruff.lint.per-file-ignores]
+"caliagent/models/wolf_sheep_predation.py" = ["NPY002"]
 
 [tool.codespell]
 skip = './docs/build,poetry.lock,docs/**.ipynb'

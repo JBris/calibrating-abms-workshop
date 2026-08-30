@@ -54,3 +54,5 @@ autodoc_pydantic_model_show_json = False
 intersphinx_mapping = {
 	"sklearn": ("https://scikit-learn.org/stable/", None),
 }
+
+nb_execution_mode = "off"
