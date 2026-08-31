@@ -14,7 +14,7 @@ pyabc = "^0.13.0"
 optuna = "^4.9.0"
 mesa-geo = "^0.9.3"
 salib = "^1.5.2"
-matplotlib = "^3.11.1"
+matplotlib = "<=3.11.1"
 pandas = "^3.0.5"
 scipy = "<1.18.1"
 joblib = "^1.5.3"
@@ -25,6 +25,8 @@ scikit-learn = "^1.9.0"
 plotly = "^7.0.0"
 numba = "^0.67.0"
 numpy = "<2.5.2"
+elfi = {git = "https://github.com/elfi-dev/elfi.git", rev = "dcbf4c1592a44acc7ff9980c86aeb714a88737f6"}
+
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.6.2"
