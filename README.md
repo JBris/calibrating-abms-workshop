@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)](https://www.python.org)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22142543.svg)](https://doi.org/10.5281/zenodo.22142543)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22142542.svg)](https://doi.org/10.5281/zenodo.22142542)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JBris/calibrating-abms-workshop.git/HEAD)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
