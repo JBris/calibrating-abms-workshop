@@ -18,7 +18,8 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER} \
     && mv /workspace/* ${HOME} \
-    && chown -R ${NB_UID} ${HOME}
+    && chown -R ${NB_UID} ${HOME} \
+    && chown -R ${NB_UID} ${VIRTUAL_ENV}
 
 USER ${NB_USER}
 
