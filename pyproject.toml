@@ -27,6 +27,9 @@ numba = "^0.67.0"
 numpy = "<2.5.2"
 elfi = {git = "https://github.com/elfi-dev/elfi.git", rev = "dcbf4c1592a44acc7ff9980c86aeb714a88737f6"}
 
+[tool.poetry.group.torch.dependencies]
+torch = { version = "<=2.13.0", source = "pytorch-cpu" }
+sbi = "^0.27.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.6.2"
@@ -54,6 +57,11 @@ sphinxcontrib-qthelp = "^2.0.0"
 sphinxcontrib-serializinghtml = "^2.0.0"
 myst-nb = "^1.4.0"
 autodoc-pydantic = "^2.2.0"
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]

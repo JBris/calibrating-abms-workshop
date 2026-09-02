@@ -35,7 +35,7 @@ ENV POETRY_NO_INTERACTION=1 \
 COPY pyproject.toml poetry.lock ./
 
 RUN curl -sSL https://install.python-poetry.org | python3 -\
-    && poetry install --with dev,docs \
+    && poetry install --no-interaction \
     && rm -rf $POETRY_CACHE_DIR \
     && curl -sSL https://install.python-poetry.org | python3 - --uninstall
 
