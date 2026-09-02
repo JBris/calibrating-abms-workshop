@@ -9,3 +9,4 @@ Workshop
    2_notebooks/1_lotka_volterra_optimisation.ipynb
    2_notebooks/2_wolf_sheep_predation_parameter_space.ipynb
    2_notebooks/3_wolf_sheep_predation_sensitivity_analysis.ipynb
+   2_notebooks/4_wolf_sheep_predation_calibration.ipynb
