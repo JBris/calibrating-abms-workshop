@@ -18,8 +18,8 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER} \
     && mv /workspace/* ${HOME} \
-    && chown -R ${NB_UID} ${HOME} \
-    && chown -R ${NB_UID} ${VIRTUAL_ENV}
+    && mv ${HOME}/caliagent ${HOME}/workshop/2_notebooks \
+    && chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
 
