@@ -18,6 +18,7 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER} \
     && mv /workspace/* ${HOME} \
+    && mv /workspace/.venv ${HOME}/.venv \
     && chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
