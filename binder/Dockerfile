@@ -10,15 +10,14 @@ ENV NB_UID ${NB_UID}
 
 ENV HOME /home/${NB_USER}
 
-ENV VIRTUAL_ENV=${HOME}/.venv \
-    PATH="${HOME}/.venv/bin:$PATH"
+ENV VIRTUAL_ENV=/workspace/.venv \
+    PATH="/workspace/.venv/bin:$PATH"
 
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
     ${NB_USER} \
     && mv /workspace/* ${HOME} \
-    && mv /workspace/.venv ${HOME}/.venv \
     && chown -R ${NB_UID} ${HOME}
 
 USER ${NB_USER}
