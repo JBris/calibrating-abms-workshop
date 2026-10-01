@@ -42,7 +42,7 @@ types-pyyaml = "^6.0.12.20260815"
 ruff = "^0.16.5"
 jupyterlab = "^4.6.3"
 notebook = "^7.6.2"
-jupyterhub = "^5.5.1"
+jupyterhub = ">=5.5.1,<7.0.0"
 myst-parser = "^5.1.0"
 python-discovery = ">=1.6.0"
 
